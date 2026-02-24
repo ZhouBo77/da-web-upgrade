@@ -1,0 +1,68 @@
+BODY {
+	BACKGROUND-COLOR: #FFFFFF; BACKGROUND-REPEAT: no-repeat
+}
+.body {
+	COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px
+}
+
+A {
+	COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Verdana, arial, sans serif; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Verdana, arial, sans serif
+}
+A:active {
+	COLOR: #6699cc; FONT-SIZE: 12px; FONT-FAMILY: Verdana, arial, sans serif
+}
+A:hover {
+	COLOR: #6699cc; FONT-SIZE: 12px; FONT-FAMILY: Verdana, arial, sans serif; TEXT-DECORATION: none
+}
+
+A.MainMenu {
+	COLOR: #000000; FONT-FAMILY: Georgia, Garamond; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.MainMenu {
+	COLOR: #993333; FONT-FAMILY: Georgia, Garamond; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.MainText {
+	COLOR: gray; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px; PADDING-BOTTOM: 2px
+}
+.Text {
+	COLOR: black; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 11px; LINE-HEIGHT: 16px; PADDING-BOTTOM: 2px
+}
+.text-gray {
+	COLOR: #696969; FONT-FAMILY: 楷体, Geneva, Arial; FONT-SIZE: 11px; FONT-STYLE: normal;  LINE-HEIGHT: normal; TEXT-DECORATION: none
+}
+.text_black{1
+        COLOR: #000000; FONT-FAMILY: 楷体, Geneva, Arial; FONT-SIZE: 12px; FONT-STYLE: normal;  LINE-HEIGHT: normal; TEXT-DECORATION: none
+}
+.text_black2{1
+        COLOR: #000000;
+	FONT-FAMILY: "楷体", Geneva, Arial;
+	FONT-SIZE: 12px;
+	FONT-STYLE: normal;
+	LINE-HEIGHT: normal;
+	TEXT-DECORATION: underline;
+	color: #003399;
+}
+.text_white{
+        COLOR: #ffffff; FONT-FAMILY: 楷体, Geneva, Arial; FONT-SIZE: 12px; FONT-STYLE: normal;  LINE-HEIGHT: normal; TEXT-DECORATION: none
+}
+.text_submit{
+        COLOR: #ffffff; FONT-FAMILY: 楷体, Geneva, Arial; FONT-SIZE: 14px; FONT-STYLE: normal;  LINE-HEIGHT: normal; TEXT-DECORATION: none
+}
+.Text_title{
+        COLOR: #336699;FONT-SIZE: 14px;FONT-WEIGHT: bold;FONT-FAMILY: 楷体, Geneva, Arial;
+
+}
+A.Text {
+	COLOR: black; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 10px; LINE-HEIGHT: 16px; PADDING-BOTTOM: 2px
+}
+A.Text2 {
+	COLOR: gray; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 10px; LINE-HEIGHT: 16px; PADDING-BOTTOM: 2px
+}
+.Error {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #0A86A5; FONT-FAMILY: Verdana, arial, sans serif
+}
+.ErrorBG {
+	BACKGROUND-COLOR: #ffff99

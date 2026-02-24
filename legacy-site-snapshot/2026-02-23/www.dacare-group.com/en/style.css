@@ -1,0 +1,68 @@
+BODY {
+	BACKGROUND-COLOR: #FFFFFF; BACKGROUND-REPEAT: no-repeat
+}
+.body {
+	COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px
+}
+.Text_title {COLOR: #336699;FONT-SIZE: 14px;FONT-WEIGHT: bold;font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+
+}
+A {
+	COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: Verdana, arial, sans serif; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: Verdana, arial, sans serif
+}
+A:active {
+	COLOR: #6699cc; FONT-SIZE: 11px; FONT-FAMILY: Verdana, arial, sans serif
+}
+A:hover {
+	COLOR: #6699cc; FONT-SIZE: 11px; FONT-FAMILY: Verdana, arial, sans serif; TEXT-DECORATION: none
+}
+A.MainMenu {
+	COLOR: #000000; FONT-FAMILY: Georgia, Garamond; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.MainMenu {
+	COLOR: #993333; FONT-FAMILY: Georgia, Garamond; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.MainText {
+	COLOR: gray; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px; PADDING-BOTTOM: 2px
+}
+.textBG {
+	BACKGROUND-COLOR: #fffce9
+}
+.textBG2 {
+	BACKGROUND-COLOR: #eeedf2
+}
+.Text {
+	COLOR: black; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 11px; LINE-HEIGHT: 16px; PADDING-BOTTOM: 2px
+}
+.Text_gray {
+	COLOR: #696969; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"; FONT-SIZE: 12px; 
+}
+.Text2 {
+	COLOR: black; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 10px
+}
+.Textsmaller {
+	COLOR: black; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 9px
+}
+A.Text {
+	COLOR: black; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 10px; LINE-HEIGHT: 16px; PADDING-BOTTOM: 2px
+}
+A.Text2 {
+	COLOR: gray; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 10px; LINE-HEIGHT: 16px; PADDING-BOTTOM: 2px
+}
+.copyRight {
+	COLOR: #999999; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 10px; LINE-HEIGHT: 14px; PADDING-BOTTOM: 2px
+}
+.bluetext {
+	COLOR: blue; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 11px
+}
+.redtext {
+	COLOR: red; FONT-FAMILY: Verdana, arial, sans serif; FONT-SIZE: 11px
+}
+.Error {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #0A86A5; FONT-FAMILY: Verdana, arial, sans serif
+}
+.ErrorBG {
+	BACKGROUND-COLOR: #ffff99
