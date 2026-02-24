@@ -1,11 +1,83 @@
-<!doctype html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>DaCare Design Options</title>
-<style>body{font-family:Inter,system-ui;margin:0;background:#f7f8fb;color:#142033}.wrap{max-width:900px;margin:0 auto;padding:28px 18px}h1{margin:0 0 12px}.list{display:grid;gap:12px}.item{background:#fff;border:1px solid #d8dfeb;padding:14px;border-radius:10px}a{font-weight:700;color:#0f3a7a;text-decoration:none}</style></head>
-<body><div class='wrap'><h1>DaCare · 5 Look & Feel Options</h1><p>Pick one base direction and I will convert all key templates to that system.</p><div class='list'>
-<div class='item'><a href='./designs/a-traditional-global.html'>A — Traditional Global Firm</a><div>Conservative, institutional, boardroom tone.</div></div>
-<div class='item'><a href='./designs/b-modern-boutique.html'>B — Modern Premium Boutique</a><div>Balanced premium style (current recommended baseline).</div></div>
-<div class='item'><a href='./designs/c-bold-contemporary.html'>C — Bold Contemporary</a><div>High-contrast, modern, assertive brand energy.</div></div>
-<div class='item'><a href='./designs/d-editorial-trust.html'>D — Editorial Trust</a><div>Classic serif authority, thought-leadership vibe.</div></div>
-<div class='item'><a href='./designs/e-data-driven-corporate.html'>E — Data-Driven Corporate</a><div>KPI-forward, process-transparent enterprise feel.</div></div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DaCare - Executive Search for Growing Companies</title>
+  <style>
+    :root{--bg:#f4f3f0;--panel:#fff;--ink:#1b2430;--muted:#5d6878;--brand:#111d2e;--accent:#9b7a4a;--line:#d8d2c8}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial;background:var(--bg);color:var(--ink);line-height:1.6}
+    .container{max-width:1100px;margin:0 auto;padding:0 18px}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:3}
+    .nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{font-weight:700;letter-spacing:.08em}
+    .menu{display:flex;gap:14px;flex-wrap:wrap;color:#2f3b4c;font-size:14px}
+    .lang a{color:#2f3b4c;text-decoration:none}.lang a.active{font-weight:700}
+    .hero{background:linear-gradient(120deg,var(--brand),#2b3b50);color:#f4f6fb;padding:58px 0;border-bottom:4px solid var(--accent)}
+    .hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,4.8vw,52px);line-height:1.08;margin:0 0 12px}
+    .hero p{font-size:18px;max-width:760px;margin:0 0 18px;opacity:.96}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:11px 16px;text-decoration:none;font-weight:700;border-radius:2px}
+    .btn-primary{background:#f2ede3;color:#111d2e}.btn-ghost{border:1px solid rgba(244,246,251,.55);color:#f4f6fb}
+    section{padding:38px 0}
+    h2{font-family:Georgia,serif;font-size:34px;margin:0 0 10px;font-weight:600}
+    .sub{color:var(--muted);margin:0 0 16px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .card{background:var(--panel);border:1px solid var(--line);padding:18px}
+    .card h3{margin:0 0 6px;font-size:20px;font-family:Georgia,serif}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .step b{display:inline-block;width:28px;height:28px;border-radius:999px;background:#1f2e44;color:#fff;text-align:center;line-height:28px;margin-bottom:8px}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .kpi{background:var(--panel);border:1px solid var(--line);padding:14px}
+    .kpi .v{font-size:26px;font-weight:800;color:#12233a}
+    .quote{background:#fff;border-left:4px solid var(--accent);padding:16px 18px;color:#334155}
+    .cta{background:#fff;border:1px solid var(--line);padding:22px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .small{font-size:13px;color:#6b7280}
+    footer{padding:26px 0 40px;color:#6b7280;font-size:13px}
+    @media(max-width:900px){.grid3,.steps{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:1fr 1fr}}
+    @media(max-width:640px){.menu{font-size:13px;gap:9px}.hero{padding:44px 0}.hero p{font-size:16px}.grid3,.steps,.kpis{grid-template-columns:1fr}.btn{display:block;text-align:center}}
+  </style>
+</head>
+<body>
+<header><div class="container nav"><div class="logo">DACARE</div><div class="menu"><span>Home</span><span>About</span><span>Services</span><span>Industries</span><span>Insights</span><span>Contact</span><span class="lang"><a class="active" href="/da-web-upgrade/">EN</a> / <a href="/da-web-upgrade/zh/">中文</a></span></div></div></header>
 
-<div class='item'><a href='./designs/f-sme-conversion-v5.html'>F — SME Trust & Conversion (v5)</a><div>面向中小企业：可信度优先 + 强转化路径。</div></div>
-</div></div></body></html>
+<section class="hero"><div class="container">
+  <h1>Executive Search and Talent Advisory for Growing SMEs</h1>
+  <p>We help founders and business leaders hire critical talent faster — with clearer role definition, better candidate quality, and stronger onboarding outcomes.</p>
+  <div class="actions"><a class="btn btn-primary" href="#contact">Book a 30-min Consultation</a><a class="btn btn-ghost" href="#process">View How It Works</a></div>
+</div></section>
+
+<section><div class="container">
+  <h2>Core Services</h2><p class="sub">Built for credibility and conversion: clarify value fast, then guide to action.</p>
+  <div class="grid3">
+    <article class="card"><h3>Executive Search</h3><p>Targeted search for leadership and mission-critical roles.</p></article>
+    <article class="card"><h3>Professional Hiring</h3><p>Function-specific recruitment for growth-stage teams.</p></article>
+    <article class="card"><h3>RPO Support</h3><p>Embedded recruiting execution during hiring spikes.</p></article>
+  </div>
+</div></section>
+
+<section id="process"><div class="container">
+  <h2>How We Work (3 Steps)</h2><p class="sub">Clear process lowers decision friction for SME owners.</p>
+  <div class="steps">
+    <article class="card step"><b>1</b><h3>Role Calibration</h3><p>Define role outcomes, priorities, and timeline in 30–60 mins.</p></article>
+    <article class="card step"><b>2</b><h3>Talent Search</h3><p>First shortlist typically delivered within 1–2 weeks.</p></article>
+    <article class="card step"><b>3</b><h3>Offer & Onboarding</h3><p>Support offer closure and post-join stabilization.</p></article>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <h2>Outcome Signals</h2><p class="sub">Replace with your verified numbers later for stronger trust.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="v">24h</div><div>Initial response</div></div>
+    <div class="kpi"><div class="v">7-14d</div><div>First shortlist</div></div>
+    <div class="kpi"><div class="v">95%+</div><div>Process follow-through</div></div>
+    <div class="kpi"><div class="v">Ongoing</div><div>Post-join support</div></div>
+  </div>
+</div></section>
+
+<section><div class="container"><div class="quote">“They aligned our hiring brief before sourcing, which improved interview quality and speed.” — Founder, Growth-stage Company</div></div></section>
+
+<section id="contact"><div class="container"><div class="cta"><div><h3 style="margin:0 0 6px;font-family:Georgia,serif">Tell Us Your Hiring Priority</h3><div class="small">We’ll share a practical plan within 24 hours.</div></div><a class="btn btn-primary" href="#">Submit Hiring Request</a></div></div></section>
+
+<footer><div class="container">DaCare Homepage v5 · EN default with bilingual switch</div></footer>
+</body></html>
