@@ -1,0 +1,8 @@
+name = "dacare-contact-email"
+main = "contact-email-worker.js"
+compatibility_date = "2026-02-24"
+
+[vars]
+TO_EMAIL = "support@dacare.com"
+FROM_EMAIL = "noreply@dacare.com"
+ALLOWED_ORIGIN = "https://zhoubo77.github.io"

@@ -31,17 +31,17 @@
 <section><div class="container grid">
   <div class="card">
     <h2 style="font-family:Georgia,serif;margin-top:0">Start a Hiring Conversation</h2>
-    <form>
+    <form id="contactForm">
       <div class="grid">
-        <div><label>Full Name</label><input placeholder="Your name" /></div>
-        <div><label>Work Email</label><input type="email" placeholder="name@company.com" /></div>
+        <div><label>Full Name</label><input name="name" placeholder="Your name" required /></div>
+        <div><label>Work Email</label><input name="email" type="email" placeholder="name@company.com" required /></div>
       </div>
       <div class="grid" style="margin-top:10px">
-        <div><label>Company</label><input placeholder="Company name" /></div>
-        <div><label>Hiring Priority</label><select><option>Executive Search</option><option>Professional Search</option><option>RPO</option><option>Advisory</option></select></div>
+        <div><label>Company</label><input name="company" placeholder="Company name" /></div>
+        <div><label>Hiring Priority</label><select name="priority"><option>Executive Search</option><option>Professional Search</option><option>RPO</option><option>Advisory</option></select></div>
       </div>
-      <div style="margin-top:10px"><label>Role / Context</label><textarea placeholder="What role are you hiring for? Timeline? Key challenges?"></textarea></div>
-      <div style="margin-top:12px"><button class="btn" type="button">Submit Request</button></div>
+      <div style="margin-top:10px"><label>Role / Context</label><textarea name="message" placeholder="What role are you hiring for? Timeline? Key challenges?" required></textarea></div>
+      <div style="margin-top:12px"><button class="btn" type="submit">Submit Request</button></div>
     </form>
   </div>
   <div class="card">
@@ -57,5 +57,48 @@
     <div class="meta">Email: contact@dacare-group.com<br/>WeChat / WhatsApp: Available upon request</div>
   </div>
 </div></section>
+  <script src="/da-web-upgrade/assets/contact-config.js"></script>
+  <script>
+    const form = document.querySelector("form")
+    const btn = form?.querySelector("button")
+    const note = document.createElement("div")
+    note.style.marginTop = "10px"
+    note.style.fontSize = "14px"
+    form?.appendChild(note)
+
+    form?.addEventListener("submit", async (e) => {
+      e.preventDefault()
+      const endpoint = window.DACARE_CONFIG?.CONTACT_ENDPOINT
+      if (!endpoint || endpoint.includes("YOUR_WORKER_SUBDOMAIN")) {
+        note.textContent = "Form endpoint is not configured yet."
+        note.style.color = "#b91c1c"
+        return
+      }
+
+      const data = Object.fromEntries(new FormData(form).entries())
+      btn.disabled = true
+      btn.textContent = "Submitting..."
+      note.textContent = ""
+
+      try {
+        const resp = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        })
+        const json = await resp.json()
+        if (!resp.ok || !json.ok) throw new Error(json.error || "Submit failed")
+        note.textContent = "Submitted successfully. We will respond within 24 hours."
+        note.style.color = "#166534"
+        form.reset()
+      } catch (err) {
+        note.textContent = "Submit failed: " + (err?.message || err)
+        note.style.color = "#b91c1c"
+      } finally {
+        btn.disabled = false
+        btn.textContent = "Submit Request"
+      }
+    })
+  </script>
 </body>
 </html>
