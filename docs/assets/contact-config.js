@@ -1,4 +1,3 @@
 window.DACARE_CONFIG = {
-  // Replace with your deployed worker URL
-  CONTACT_ENDPOINT: 'https://dacare.workers.dev/submit-contact'
+  CONTACT_ENDPOINT: 'https://dacare-contact-email.dacare.workers.dev/submit-contact'
 }
