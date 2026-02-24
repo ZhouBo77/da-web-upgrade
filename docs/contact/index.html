@@ -16,8 +16,10 @@
     .sub{opacity:.95;max-width:760px}
     section{padding:30px 0}
     .card{background:var(--panel);border:1px solid var(--line);padding:20px}
-    .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}
-    .col{display:block}
+    .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;align-items:stretch}
+    .col{display:flex;flex-direction:column;gap:16px;min-height:100%}
+    .col > .card{margin-top:0 !important}
+    .fill{flex:1}
     .inner-grid{grid-template-columns:1fr 1fr}
     label{display:block;font-size:13px;color:#334155;margin-bottom:6px;font-weight:600}
     input,select,textarea{width:100%;padding:10px;border:1px solid #cfd4dc;background:#fff;font:inherit}
@@ -77,7 +79,7 @@
       </div>
     </div>
 
-    <div class="card" style="margin-top:16px">
+    <div class="card fill">
       <h3 style="margin-top:0">Confidentiality</h3>
       <div class="meta">All submissions are handled confidentially and reviewed by the consulting team only.</div>
       <hr style="border:none;border-top:1px solid #e0e3e8;margin:16px 0"/>
