@@ -3,50 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DaCare Rebuild Preview v1</title>
+  <title>DaCare Rebuild Preview v2</title>
   <style>
-    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:#f7f9fc;color:#0f172a}
-    header{background:#0b2545;color:#fff;padding:16px 24px;position:sticky;top:0}
-    .nav{display:flex;gap:18px;flex-wrap:wrap;font-weight:600}
-    .wrap{max-width:1000px;margin:0 auto;padding:24px}
-    .card{background:#fff;border-radius:12px;padding:18px 20px;margin:16px 0;box-shadow:0 4px 16px rgba(0,0,0,.06)}
-    h1,h2{margin:.2em 0 .5em}
-    ul{margin:.4em 0 .2em 1.2em}
-    .muted{color:#475569}
+    :root{--bg:#f6f8fc;--text:#0f172a;--muted:#475569;--brand:#0b2545;--accent:#0ea5e9;--card:#fff}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+    .top{position:sticky;top:0;background:var(--brand);color:#fff;z-index:3}
+    .nav{max-width:1100px;margin:0 auto;padding:14px 20px;display:flex;gap:16px;flex-wrap:wrap;font-weight:600}
+    .hero{background:linear-gradient(120deg,#0b2545 0%,#123a68 50%,#0b2545 100%);color:#fff}
+    .hero .inner{max-width:1100px;margin:0 auto;padding:64px 20px 56px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+    .hero h1{font-size:clamp(28px,4vw,46px);line-height:1.1;margin:0 0 14px}
+    .hero p{font-size:clamp(15px,2vw,19px);opacity:.95;margin:0 0 22px}
+    .btns{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:11px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.primary{background:#fff;color:var(--brand)} .btn.secondary{border:1px solid rgba(255,255,255,.5);color:#fff}
+    .stats{background:rgba(255,255,255,.1);padding:16px;border-radius:12px}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 20px}
+    h2{font-size:clamp(22px,3vw,32px);margin:0 0 12px}
+    .sub{color:var(--muted);margin:0 0 20px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 4px 16px rgba(2,6,23,.06)}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .card p{margin:0;color:var(--muted)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .cta{background:#0b2545;color:#fff;border-radius:14px;padding:22px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .footer{max-width:1100px;margin:0 auto;padding:26px 20px 40px;color:#64748b;font-size:14px}
+    @media (max-width:900px){.hero .inner{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
+    @media (max-width:620px){.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="nav">Home · About · Services · Industries · Insights · Contact · EN/中文</div>
-  </header>
+  <header class="top"><nav class="nav">Home · About · Services · Industries · Insights · Contact · EN/中文</nav></header>
+
+  <section class="hero">
+    <div class="inner">
+      <div>
+        <h1>Build Leadership Teams That Scale Your Growth</h1>
+        <p>DaCare connects high-growth companies with proven leaders and specialist talent across key industries in North America and Asia.</p>
+        <div class="btns">
+          <a class="btn primary" href="#services">Book a Consultation</a>
+          <a class="btn secondary" href="#contact">Talk to an Expert</a>
+        </div>
+      </div>
+      <aside class="stats">
+        <strong>Preview v2 focus</strong>
+        <ul>
+          <li>Mobile-first homepage hierarchy</li>
+          <li>Service blocks + conversion CTA</li>
+          <li>Bilingual navigation foundation</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
   <main class="wrap">
-    <h1>DaCare Website Rebuild Preview (v1)</h1>
-    <p class="muted">Purpose: preview navigation and information architecture before full build.</p>
-
-    <section class="card">
-      <h2>EN Navigation</h2>
-      <ul>
-        <li>Home</li><li>About</li><li>Services</li><li>Industries</li><li>Insights</li><li>Contact</li>
-      </ul>
-      <p><strong>Services submenu:</strong> Executive Search · Professional Staffing · HR Advisory & Training · RPO</p>
+    <section id="services">
+      <h2>Core Services</h2>
+      <p class="sub">Structured for fast understanding on mobile and clear conversion paths.</p>
+      <div class="grid">
+        <article class="card"><h3>Executive Search</h3><p>Targeted leadership hiring for critical roles.</p></article>
+        <article class="card"><h3>Professional Staffing</h3><p>High-quality specialist recruitment with speed.</p></article>
+        <article class="card"><h3>HR Advisory & Training</h3><p>Practical consulting to improve team capability.</p></article>
+        <article class="card"><h3>RPO</h3><p>Embedded recruiting process to scale hiring output.</p></article>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>中文导航</h2>
-      <ul>
-        <li>首页</li><li>关于我们</li><li>服务</li><li>行业专长</li><li>观点洞察</li><li>联系我们</li>
-      </ul>
-      <p><strong>服务子菜单：</strong>高管寻访 · 专业人才招聘 · 人力资源咨询与培训 · 招聘流程外包（RPO）</p>
+    <section style="margin-top:24px">
+      <h2>Industries We Cover</h2>
+      <div class="two">
+        <article class="card"><h3>Technology & AI</h3><p>Product, engineering, and GTM leadership hiring support.</p></article>
+        <article class="card"><h3>Healthcare & Life Sciences</h3><p>Commercial and functional talent for regulated growth.</p></article>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Next review checkpoints</h2>
-      <ul>
-        <li>Homepage information hierarchy</li>
-        <li>Service page template</li>
-        <li>Contact conversion block</li>
-      </ul>
+    <section id="contact" style="margin-top:24px">
+      <div class="cta">
+        <div>
+          <h3 style="margin:0 0 6px">Need to hire in the next 60 days?</h3>
+          <div style="opacity:.9">Share your hiring goal and we’ll propose a focused talent plan.</div>
+        </div>
+        <a class="btn primary" href="#">Start Hiring Plan</a>
+      </div>
     </section>
   </main>
+
+  <footer class="footer">DaCare Rebuild Preview v2 · Homepage information hierarchy draft</footer>
 </body>
 </html>
