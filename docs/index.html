@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DaCare Rebuild Preview v2</title>
+  <title>DaCare Rebuild Preview v3</title>
   <style>
     :root{--bg:#f6f8fc;--text:#0f172a;--muted:#475569;--brand:#0b2545;--accent:#0ea5e9;--card:#fff}
     *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
     .top{position:sticky;top:0;background:var(--brand);color:#fff;z-index:3}
-    .nav{max-width:1100px;margin:0 auto;padding:14px 20px;display:flex;gap:16px;flex-wrap:wrap;font-weight:600}
+    .nav{max-width:1100px;margin:0 auto;padding:12px 14px;display:flex;gap:8px;flex-wrap:wrap;font-weight:600}
+    .nav span{background:rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;display:inline-block}
     .hero{background:linear-gradient(120deg,#0b2545 0%,#123a68 50%,#0b2545 100%);color:#fff}
     .hero .inner{max-width:1100px;margin:0 auto;padding:64px 20px 56px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
     .hero h1{font-size:clamp(28px,4vw,46px);line-height:1.1;margin:0 0 14px}
@@ -28,11 +29,19 @@
     .cta{background:#0b2545;color:#fff;border-radius:14px;padding:22px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
     .footer{max-width:1100px;margin:0 auto;padding:26px 20px 40px;color:#64748b;font-size:14px}
     @media (max-width:900px){.hero .inner{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
-    @media (max-width:620px){.grid{grid-template-columns:1fr}}
+    @media (max-width:620px){
+      .nav{gap:6px;font-size:13px}
+      .hero .inner{padding:38px 14px 34px}
+      .btns{width:100%}
+      .btn{flex:1 1 100%;text-align:center}
+      .card{padding:14px}
+      .cta{padding:16px}
+      .grid{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
-  <header class="top"><nav class="nav">Home · About · Services · Industries · Insights · Contact · EN/中文</nav></header>
+  <header class="top"><nav class="nav"><span>Home</span><span>About</span><span>Services</span><span>Industries</span><span>Insights</span><span>Contact</span><span>EN/中文</span></nav></header>
 
   <section class="hero">
     <div class="inner">
@@ -45,7 +54,7 @@
         </div>
       </div>
       <aside class="stats">
-        <strong>Preview v2 focus</strong>
+        <strong>Preview v3 focus</strong>
         <ul>
           <li>Mobile-first homepage hierarchy</li>
           <li>Service blocks + conversion CTA</li>
@@ -86,6 +95,6 @@
     </section>
   </main>
 
-  <footer class="footer">DaCare Rebuild Preview v2 · Homepage information hierarchy draft</footer>
+  <footer class="footer">DaCare Rebuild Preview v3 · Homepage information hierarchy draft</footer>
 </body>
 </html>
