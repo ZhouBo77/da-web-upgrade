@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DaCare v5 - 中小企业转化版</title>
+  <style>
+    :root{--bg:#f4f3f0;--panel:#fff;--ink:#1b2430;--muted:#5d6878;--brand:#111d2e;--accent:#9b7a4a;--line:#d8d2c8}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial;background:var(--bg);color:var(--ink);line-height:1.6}
+    .container{max-width:1100px;margin:0 auto;padding:0 18px}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:3}
+    .nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{font-weight:700;letter-spacing:.08em}
+    .menu{display:flex;gap:14px;flex-wrap:wrap;color:#2f3b4c;font-size:14px}
+    .hero{background:linear-gradient(120deg,var(--brand),#2b3b50);color:#f4f6fb;padding:58px 0;border-bottom:4px solid var(--accent)}
+    .hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,4.8vw,52px);line-height:1.08;margin:0 0 12px}
+    .hero p{font-size:18px;max-width:760px;margin:0 0 18px;opacity:.96}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:11px 16px;text-decoration:none;font-weight:700;border-radius:2px}
+    .btn-primary{background:#f2ede3;color:#111d2e}.btn-ghost{border:1px solid rgba(244,246,251,.55);color:#f4f6fb}
+    section{padding:38px 0}
+    h2{font-family:Georgia,serif;font-size:34px;margin:0 0 10px;font-weight:600}
+    .sub{color:var(--muted);margin:0 0 16px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .card{background:var(--panel);border:1px solid var(--line);padding:18px}
+    .card h3{margin:0 0 6px;font-size:20px;font-family:Georgia,serif}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .step b{display:inline-block;width:28px;height:28px;border-radius:999px;background:#1f2e44;color:#fff;text-align:center;line-height:28px;margin-bottom:8px}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .kpi{background:var(--panel);border:1px solid var(--line);padding:14px}
+    .kpi .v{font-size:26px;font-weight:800;color:#12233a}
+    .quote{background:#fff;border-left:4px solid var(--accent);padding:16px 18px;color:#334155}
+    .cta{background:#fff;border:1px solid var(--line);padding:22px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .small{font-size:13px;color:#6b7280}
+    footer{padding:26px 0 40px;color:#6b7280;font-size:13px}
+    @media(max-width:900px){.grid3,.steps{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:1fr 1fr}}
+    @media(max-width:640px){.menu{font-size:13px;gap:9px}.hero{padding:44px 0}.hero p{font-size:16px}.grid3,.steps,.kpis{grid-template-columns:1fr}.btn{display:block;text-align:center}}
+  </style>
+</head>
+<body>
+<header><div class="container nav"><div class="logo">DACARE</div><div class="menu"><span>首页</span><span>关于我们</span><span>服务</span><span>行业专长</span><span>洞察</span><span>联系我们</span></div></div></header>
+
+<section class="hero"><div class="container">
+  <h1>为中小企业提供可落地的中高端招聘与猎头服务</h1>
+  <p>我们帮助创始人和业务负责人更快找到关键人才：岗位定义更准、寻访更快、到岗更稳。</p>
+  <div class="actions"><a class="btn btn-primary" href="#contact">预约 30 分钟咨询</a><a class="btn btn-ghost" href="#process">查看服务流程</a></div>
+</div></section>
+
+<section><div class="container">
+  <h2>核心服务</h2><p class="sub">围绕“可信度 + 转化率”设计：首页先讲清楚你能解决什么问题。</p>
+  <div class="grid3">
+    <article class="card"><h3>中高端人才寻访</h3><p>针对关键岗位做定向 mapping 与人才触达。</p></article>
+    <article class="card"><h3>管理层招聘支持</h3><p>聚焦业务负责人、职能负责人等关键岗位。</p></article>
+    <article class="card"><h3>招聘流程外包（RPO）</h3><p>在你招聘高峰期，快速补齐招聘执行能力。</p></article>
+  </div>
+</div></section>
+
+<section id="process"><div class="container">
+  <h2>服务流程（3步）</h2><p class="sub">让中小企业客户快速建立预期、降低决策成本。</p>
+  <div class="steps">
+    <article class="card step"><b>1</b><h3>需求校准</h3><p>30-60 分钟梳理岗位画像、优先级与时间节点。</p></article>
+    <article class="card step"><b>2</b><h3>人才寻访</h3><p>1-2 周完成首批候选人推荐与面试反馈闭环。</p></article>
+    <article class="card step"><b>3</b><h3>录用跟进</h3><p>协助 offer 沟通与入职稳定，降低流失风险。</p></article>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <h2>结果导向指标（示例展示）</h2><p class="sub">可按你真实数据替换，提升信任与转化。</p>
+  <div class="kpis">
+    <div class="kpi"><div class="v">24h</div><div>初步反馈时效</div></div>
+    <div class="kpi"><div class="v">7-14天</div><div>首批推荐周期</div></div>
+    <div class="kpi"><div class="v">95%+</div><div>面试流程跟进率</div></div>
+    <div class="kpi"><div class="v">持续</div><div>到岗后回访支持</div></div>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <div class="quote">“他们不是只推简历，而是先帮我们把岗位定义和面试标准拉齐，招聘效率明显提升。” —— 某成长型企业创始人</div>
+</div></section>
+
+<section id="contact"><div class="container"><div class="cta"><div><h3 style="margin:0 0 6px;font-family:Georgia,serif">告诉我们你要招的关键岗位</h3><div class="small">我们会在 24 小时内给出初步建议与执行方案。</div></div><a class="btn btn-primary" href="#">提交招聘需求</a></div></div></section>
+
+<footer><div class="container">DaCare Rebuild Preview v5 · SME Trust & Conversion Direction</div></footer>
+</body></html>
